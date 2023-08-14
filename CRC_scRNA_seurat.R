@@ -43,11 +43,10 @@ markers <- FindAllMarkers(liver, only.pos = TRUE,
                           logfc.threshold = 0.25,
                           test.use = "wilcox")
 
-top10 <- markers %>% group_by(cluster) %>%
-  top_n(n = 10, wt = avg_log2FC) 
+## Determine cell type by markers according to The Human Protein Atlas and literature
+## KCs were defined as CSF1R+ SPI1+ TIMD4+. TAMs were defined as CSF1R+ SPI1+ TIMD4- TREM2+
+## Prepare a cell type assignment table in Excel
 
-## Determine cell types by markers according to The Human Protein Atlas and literature
-## Prepare an assignment table 
 # Assign cell type to cluster
 dd <- read.csv("CRC_cell_type_assign_table.csv")
 dd$cluster <- as.factor(dd$cluster)
