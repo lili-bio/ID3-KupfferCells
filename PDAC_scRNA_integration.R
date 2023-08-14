@@ -50,13 +50,16 @@ merged_seurat <- RunPCA(merged_seurat, assay = "SCT", npcs = 50)
 harmonized_seurat <- RunHarmony(merged_seurat, 
                                 group.by.vars = c("SampleID"), 
                                 reduction = "pca", assay.use = "SCT", reduction.save = "harmony")
-# run tsne and clustering with top PCs
+# run tsne with top PCs
 harmonized_seurat <- RunTSNE(harmonized_seurat, reduction='harmony', dims = 1:40)
 harmonized_seurat <- FindNeighbors(harmonized_seurat, reduction='harmony')
 harmonized_seurat <- FindClusters(harmonized_seurat, resolution = 1.8)
 DimPlot(harmonized_seurat, reduction = "tsne", group.by = "SampleID")
 
-# the pre-saved integrated rds file is available in the folder
+## The codes for cell type assignment can be found in the CRC script
+## KCs were defined as CSF1R+ SPI1+ TIMD4+. TAMs were defined as CSF1R+ SPI1+ TIMD4- TREM2+
+
+## Here we use the pre-saved rds file for convenience. This file is available upon request
 harmonized_seurat <- readRDS("PDAC_integration_seurat.rds")
 
 DimPlot(harmonized_seurat, reduction = "tsne", group.by = "newIdent", label = TRUE)
