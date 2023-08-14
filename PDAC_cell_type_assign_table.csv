@@ -1,0 +1,49 @@
+﻿cluster,celltype
+0,CD8 T cells
+1,CD4 T cells
+2,Tumor
+3,Tumor
+4,Tumor
+5,CD8 T cells
+6,CD8 T cells
+7,TAMs
+8,Mono.
+9,Tumor
+10,Tumor
+11,Tumor
+12,CD8 T cells
+13,Tumor
+14,Tumor
+15,Hep.
+16,LVEC
+17,Hep.
+18,CD8 T cells
+19,CD4 T cells
+20,B cells
+21,Hep.
+22,TAMs
+23,Hep.
+24,Tumor
+25,Hep.
+26,Hep.
+27,DCs
+28,KCs
+29,NK like cells
+30,CD4 T cells
+31,γδ T
+32,Cholo.
+33,Tumor
+34,Tumor
+35,Tumor
+36,LSEC
+37,CD8 T cells
+38,TAMs
+39,CD8 T cells
+40,Tumor
+41,Hep.
+42,CAFs
+43,Hep.
+44,Tumor
+45,Hep.
+46,Tumor
+47,KCs
