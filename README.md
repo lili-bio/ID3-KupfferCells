@@ -1,8 +1,9 @@
-The CRC ScRNAseq dataset contains 3 colorectal liver metastasis patients and a nontumor individual(GEO accession number: GSE146409). 
-The PDAC ScRNAseq dataset contains 3 PDAC liver metastasis patients(P21, P25, P27, GEO accession number: GSE205013). 
-The health control dataset contains 5 nontumor individuals (GEO accession number: GSE115469). PDAC and health datasets were integrated using Harmony pipeline. 
+1. For the ScRNAseq analysis, the associated scripts are available on GitHub (https://github.com/lili-bio/ID3-KupfferCells). All the codes, analyzed RDS files, and the original data sets are available on Google Drive (https://drive.google.com/drive/folders/1QgZ43-FhjqUdJCUcd72Yv19fKfv0rZ8X?usp=sharing).
 
-KCs were defined as CSF1R+ SPI1+ TIMD4+. TAMs were defined as CSF1R+ SPI1+ TIMD4- TREM2+ 
+The CRC ScRNAseq dataset contained 3 colorectal liver metastasis patients and a non-tumor individual(GEO accession number: GSE146409). The PDAC ScRNAseq dataset contained 3 PDAC liver metastasis patients(P21, P25, P27, GEO accession number: GSE205013), the nontumor control contained 5 non-tumor individuals dataset (GEO accession number: GSE115469).PDAC and health datasets were integrated using the Harmony pipeline.
 
-The analyzed Seurat rds files are available upon request. 
+KCs were defined as CSF1R+ SPI1+ TIMD4+. TAMs were defined as CSF1R+ SPI1+ TIMD4- TREM2+
 
+2. For the bulk RNAseq data, raw data are deposited to the GEO repository with GEO accession number: GSE234638. GSE234638 data are available via the following link and secure token,
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE234638 
+secure token: mjyhmksynhibnst
